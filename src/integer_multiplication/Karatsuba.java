@@ -38,10 +38,4 @@ public class Karatsuba {
                 .add(middle.multiply(BigInteger.valueOf(1L << halfN)))
                 .add(x1y1.multiply(BigInteger.valueOf(1L << (halfN * 2))));
     }
-
-    public static void main(String[] args) {
-        BigInteger karatsubaResult = new Karatsuba()
-                .karatsubaIntegerMultiplication(BigInteger.valueOf(5), BigInteger.valueOf(70));
-        System.out.println(karatsubaResult);
-    }
 }
